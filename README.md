@@ -8,7 +8,7 @@ To get started, see <http://www.tipue.com/tipr/>. There's a demo at <http://www.
 Documentation
 -------------
 
-There's full documentation at <http://www.tipue.com/tipr/>
+There's full documentation at <http://www.tipue.com/tipr/>.
 
 Copyright and license
 ---------------------
