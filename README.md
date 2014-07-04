@@ -13,7 +13,7 @@ There's full documentation at <http://www.tipue.com/tipr/>.
 Copyright and license
 ---------------------
 
-Tipr Copyright (c) 2013 Tipue, under the The MIT License.
+Tipr Copyright (c) 2014 Tipue, under the The MIT License.
 
 
 
