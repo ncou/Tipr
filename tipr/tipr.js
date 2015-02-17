@@ -1,7 +1,7 @@
 
 /*
-Tipr 1.0.1
-Copyright (c) 2013 Tipue
+Tipr 1.1
+Copyright (c) 2015 Tipue
 Tipr is released under the MIT License
 http://www.tipue.com/tipr
 */
@@ -12,7 +12,8 @@ http://www.tipue.com/tipr
      $.fn.tipr = function(options) {
      
           var set = $.extend( {
-          
+               
+               'style'        : 'light',
                'speed'        : 200,
                'mode'         : 'bottom'
           
@@ -25,7 +26,7 @@ http://www.tipue.com/tipr
                $(this).hover(
                     function ()
                     {
-                         var out = '<div class="tipr_container_' + set.mode + '"><div class="tipr_point_' + set.mode + '"><div class="tipr_content">' + $(this).attr('data-tip') + '</div></div></div>';
+                         var out = '<div class="tipr_container_' + set.mode + '"><div class="tipr_point_' + set.mode + '_' + set.style + '"><div class="tipr_content_' + set.style + '">' + $(this).attr('data-tip') + '</div></div></div>';
                          
                          $(this).append(out);
                     
