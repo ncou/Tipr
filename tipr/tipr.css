@@ -1,6 +1,6 @@
 
 /*
-Tipr 2.0
+Tipr 2.0.1
 Copyright (c) 2015 Tipue
 Tipr is released under the MIT License
 http://www.tipue.com/tipr
@@ -19,6 +19,7 @@ http://www.tipue.com/tipr
      display: none;
      position: absolute;
      margin-top: 13px;
+     box-shadow: 2px 2px 5px #f9f9f9;
      z-index: 1000;
 }
 .tipr_container_top
@@ -26,6 +27,7 @@ http://www.tipue.com/tipr
      display: none;
      position: absolute;
      margin-top: -77px;
+     box-shadow: 2px 2px 5px #f9f9f9;
      z-index: 1000;
 }
 .tipr_point_top, .tipr_point_bottom 
