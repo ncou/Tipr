@@ -1,0 +1,8 @@
+{
+     "name": "Tipr",
+     "version": "2.0.1",
+     "dependencies":
+     {
+          "jquery": "~2.1.0"
+     }
+}
