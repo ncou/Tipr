@@ -1,6 +1,8 @@
 {
      "name": "Tipr",
-     "version": "2.0.1",
+     "main": [
+          "tipr/tipr.js"
+     ],
      "dependencies":
      {
           "jquery": "~2.1.0"
