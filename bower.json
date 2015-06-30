@@ -1,7 +1,8 @@
 {
      "name": "Tipr",
      "main": [
-          "tipr/tipr.js"
+          "tipr/tipr.js",
+          "tipr/tipr.css"
      ],
      "dependencies":
      {
