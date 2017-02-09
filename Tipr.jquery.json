@@ -6,7 +6,7 @@
           "tooltips",
           "hint"
      ],
-     "version": "2.0.1",
+     "version": "3.0.0",
      "author": {
           "name": "Tipue",
           "url": "http://www.tipue.com"
@@ -21,6 +21,6 @@
      "docs": "http://www.tipue.com/tipr/",
      "download": "http://www.tipue.com/tipr/",
      "dependencies": {
-          "jquery": ">=2.1.0"
+          "jquery": ">=2.2.3"
      }
 }

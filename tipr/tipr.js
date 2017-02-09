@@ -1,7 +1,7 @@
 
 /*
-Tipr 2.0.1
-Copyright (c) 2015 Tipue
+Tipr 3.0
+Copyright (c) 2017 Tipue
 Tipr is released under the MIT License
 http://www.tipue.com/tipr
 */
@@ -14,24 +14,45 @@ http://www.tipue.com/tipr
           var set = $.extend( {
                
                'speed'        : 200,
-               'mode'         : 'bottom'
+               'mode'         : 'below',
+               'space'        : 70
           
           }, options);
 
-          return this.each(function() {
-          
-               var tipr_cont = '.tipr_container_' + set.mode;
+          return this.each(function() {       
+
+               var mouseY = -1;
+               $(document).on('mousemove', function(event)
+               {
+                    mouseY = event.clientY;
+               });
+               var viewY = $(window).height();
 
                $(this).hover(
                     function ()
                     {
                          var d_m = set.mode;
-
-                         if ($(this).attr('data-mode'))
+ 
+                         $(window).on('resize', function()
                          {
-                              d_m = $(this).attr('data-mode')
-                              tipr_cont = '.tipr_container_' + d_m;   
+                              viewY = $(window).height();
+                         });
+                         
+                         if (viewY - mouseY < set.space)
+                         {
+                              d_m = 'above';  
                          }
+                         else
+                         {
+                              d_m = set.mode;
+                              
+                              if ($(this).attr('data-mode'))
+                              {
+                                   d_m = $(this).attr('data-mode') 
+                              }                              
+                         }
+                         
+                         tipr_cont = '.tipr_container_' + d_m;
                          
                          var out = '<div class="tipr_container_' + d_m + '"><div class="tipr_point_' + d_m + '"><div class="tipr_content">' + $(this).attr('data-tip') + '</div></div></div>';
                          
@@ -50,8 +71,7 @@ http://www.tipue.com/tipr
                     {   
                          $(tipr_cont).remove();    
                     }     
-               );
-                              
+               );             
           });
      };
      
