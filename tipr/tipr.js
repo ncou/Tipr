@@ -1,6 +1,6 @@
 
 /*
-Tipr 3.0
+Tipr 3.1
 Copyright (c) 2017 Tipue
 Tipr is released under the MIT License
 http://www.tipue.com/tipr
@@ -56,7 +56,7 @@ http://www.tipue.com/tipr
                          
                          var out = '<div class="tipr_container_' + d_m + '"><div class="tipr_point_' + d_m + '"><div class="tipr_content">' + $(this).attr('data-tip') + '</div></div></div>';
                          
-                         $(this).append(out);
+                         $(this).after(out);
                     
                          var w_t = $(tipr_cont).outerWidth();
                          var w_e = $(this).width();
